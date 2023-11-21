@@ -1,0 +1,12 @@
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square-item{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
