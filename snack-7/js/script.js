@@ -4,14 +4,11 @@ const userNumber = parseInt(prompt('Type a number'))
 
 function implementSquare (){
     for(i = 0; i < userNumber; i++){
-
         const wrapperElement = document.querySelector('.wrapper')
         const divElement = document.createElement('div')
         divElement.classList.add('square-item')
         wrapperElement.appendChild(divElement)
-    }
-
-    
+    }  
 }
 
-implementSquare()
+implementSquare ()
