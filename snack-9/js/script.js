@@ -4,54 +4,62 @@ const listaZucchine = [
 
     {
         'type':'zucchine',
-        'weigth':'50gr',
+        'weigth':50,
         'length':'2cm'
     },
     {
         'type':'zucchine',
-        'weigth':'70gr',
+        'weigth':70,
         'length':'7cm'
     },
     {
         'type':'zucchine',
-        'weigth':'52gr',
+        'weigth':52,
         'length':'1cm'
     },
     {
         'type':'zucchine',
-        'weigth':'120gr',
+        'weigth':120,
         'length':'9cm'
     },
     {
         'type':'zucchine',
-        'weigth':'30gr',
+        'weigth':30,
         'length':'23cm'
     },
     {
         'type':'zucchine',
-        'weigth':'44gr',
+        'weigth':44,
         'length':'18cm'
     },
     {
         'type':'zucchine',
-        'weigth':'6gr',
+        'weigth':6,
         'length':'13cm'
     },
     {
         'type':'zucchine',
-        'weigth':'67gr',
+        'weigth':67,
         'length':'34cm'
     },
     {
         'type':'zucchine',
-        'weigth':'56gr',
+        'weigth':56,
         'length':'6cm'
     },
     {
         'type':'zucchine',
-        'weigth':'99gr',
+        'weigth':99,
         'length':'29cm'
     },
 ]
 
-console.log(listaZucchine.weigth())
+let totalWeigth = 0
+
+
+for (i = 0; i < listaZucchine.length; i++){
+    const zucchinaAttuale = listaZucchine[i]
+    totalWeigth = totalWeigth + zucchinaAttuale.weigth;
+}
+
+console.log(totalWeigth)

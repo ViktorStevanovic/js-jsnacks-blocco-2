@@ -2,15 +2,22 @@
 
 const wrapperElement = document.querySelector('.wrapper')
 const playButton = document.createElement('button')
-const timeDisplayer = document.createElement('p')
+const stopButton = document.createElement('button')
+let timeDisplayer = document.createElement('p')
 wrapperElement.appendChild(playButton)
 wrapperElement.appendChild(timeDisplayer)
+wrapperElement.appendChild(stopButton)
 playButton.append('Start')
-
-let timer = 0
-timeDisplayer.append(timer)
+stopButton.append('Stop')
+timeDisplayer.append(0)
+let timer;
 
 playButton.addEventListener('click', function(){
-    setInterval()
+    timer = setInterval(function(){
+       timeDisplayer.innerHTML++;
+    }, 1000)
 })
 
+stopButton.addEventListener('click',function(){
+    clearInterval(timer);
+})
